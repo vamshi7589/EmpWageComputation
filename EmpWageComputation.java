@@ -62,6 +62,7 @@ public int monthlyWage() {
 		}
 		return monthlyWage;
 	}
+
 public int monthlyWage() {
 		int days = 0;
 		int hours=0;
