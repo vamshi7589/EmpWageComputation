@@ -26,3 +26,17 @@ public int empAttendance() {
 			System.out.println("Employee is absent");
 		}
 	}
+public int daliyWage(int n) {
+		int empWage=0;
+		switch (n) {
+		case isFullTime:
+			empWage = (empRatePerHour*fullTimeHours);
+			break;
+		case isPartTime:
+			empWage= (empRatePerHour*partTimeHours);
+			break;
+		default:
+			break;
+		}
+		return empWage;
+	}
