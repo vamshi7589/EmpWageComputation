@@ -40,3 +40,25 @@ public int daliyWage(int n) {
 		}
 		return empWage;
 	}
+public int monthlyWage() {
+		int days = 0;
+		int hours=0;
+		int monthlyWage = 0;
+		while (hours<=maxHours || days<=maxDays) {
+			int n=empAttendance();
+			switch (n) {
+			case isFullTime:
+				monthlyWage+=daliyWage(n);
+				hours+=fullTimeHours;
+				break;
+			case isPartTime:
+				monthlyWage+=daliyWage(n);
+				hours+=partTimeHours;
+				break;
+			default:
+				break;
+			}
+			days++;
+		}
+		return monthlyWage;
+	}
