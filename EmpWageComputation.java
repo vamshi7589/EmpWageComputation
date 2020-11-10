@@ -62,3 +62,9 @@ public int monthlyWage() {
 		}
 		return monthlyWage;
 	}
+public static void main(String[] args) {
+		EmployeeWageComputation e = new EmployeeWageComputation();
+		e.welcomeMessage();
+		System.out.println("Monthly Wage is "+e.monthlyWage()); 
+	}
+}
